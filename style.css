@@ -1,32 +1,63 @@
 body {
     margin: 0;
     background-color: #f7f7f7;
+}
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo left, menu center/right, search far right */
+  align-items: center;
+  background-color: #ffffff; /* White background */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  position: fixed;
+  width: 100%;
+}
 
+/* Logo */
+.logo img {
+  height: 30px; 
 }
-.menu{
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    gap: 10px;
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px; /* spacing between menu items */
+  padding: 20px;
 }
-.logo{
-    width: 60px;
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #333333; /* Dark gray text */
+  font-weight: 500;
+  padding: 5px 0;
 }
-.menu_item{
-    font-size: 15px;
-    color: #222;
-    
+
+/* Dropdown arrow */
+.dropdown-arrow {
+  font-size: 10px;
+  margin-left: 5px;
 }
-.search{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background: #d4ff00;
-    color: #000;
-    border: none;
+
+/* Search Button */
+.search-btn {
+  background-color: #EED900; /* Yellow/Lime */
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin-right: 20px;
 }
+
+.search-btn i {
+  color: #000; /* Icon color */
+}
+
 .hero{
     height: 300px;
     background-image: url(image/0G2A8223-2048x1365.jpg);
@@ -62,21 +93,22 @@ body {
     border-radius: 8px;
 
 }
-button{
-    padding: 15px 30px;
-}
+
 
 .hero_button1{
     background: #6B2D8F;
     border: none;
+      padding: 15px 30px;
 }
 .hero_button2{
     background: #C0FF33;
     border: none;
+      padding: 15px 30px;
 }
 .hero_button3{
     background: #ffffff;
     border: none;
+      padding: 15px 30px;
 }
 .hero_button :hover{
  background: black;
@@ -103,7 +135,7 @@ margin-top: 30px;
     font-size: medium;
  }
  .item p{
-    color: darkgray;
+    color: rgb(11, 11, 11);
     line-height: 1.6;
  }
 .item button{
